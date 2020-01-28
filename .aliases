@@ -1,0 +1,1 @@
+alias git-fresh = 'git branch | egrep -v "(master|development|\*)" | xargs git branch -D'
