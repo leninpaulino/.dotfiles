@@ -4,9 +4,9 @@
 # Download and run the script 
 [ -e ~/patch-edid.rb ] && rm ~/patch-edid.rb
 wget -O ~/patch-edid.rb https://gist.githubusercontent.com/adaugherity/7435890/raw 
-[ -e ~/DisplayVendorID-*] && rm ~/DisplayVendorID-*
+[ -d "~/DisplayVendorID-*" ] && rm ~/DisplayVendorID-*
 ruby ~/patch-edid.rb
-reboot
+sudo reboot
 
 # Recovery mode
 # It only generates a couple of files in your user’s directory and does not require any special rights to read the current monitor. (Monitor must be connected).
