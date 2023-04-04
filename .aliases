@@ -3,3 +3,6 @@ alias git-fresh='git branch | egrep -v "(master|development|\*)" | xargs git bra
 
 # Kill all running docker containers
 alias docker-kill-all='docker container kill $(docker ps -q)'
+
+# Get IP for domain. Example: ip google.com
+alias ip='dig +short'
