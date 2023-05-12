@@ -6,3 +6,7 @@ alias docker-kill-all='docker container kill $(docker ps -q)'
 
 # Get IP for domain. Example: ip google.com
 alias ip='dig +short'
+
+# Listen for incoming connections on the specified port
+# Example: listen 3000
+alias listen='nc -l'
